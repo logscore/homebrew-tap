@@ -1,5 +1,5 @@
 # homebrew-tap
 
 ```
-brew install logscore/tap/porter
+brew install logscore/tap/roxy
 ```
