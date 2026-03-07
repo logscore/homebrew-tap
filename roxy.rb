@@ -5,20 +5,20 @@
 class Roxy < Formula
   desc "Dev server port multiplexer with subdomain routing"
   homepage "https://github.com/logscore/roxy"
-  version "1.2.0"
+  version "1.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/logscore/roxy/releases/download/v1.2.0/roxy_darwin_amd64.tar.gz"
-      sha256 "1659f2acc0083b7303c2b59f218f5e27b7c65bb13d7e2c60234c8f9d31884477"
+      url "https://github.com/logscore/roxy/releases/download/v1.2.1/roxy_darwin_amd64.tar.gz"
+      sha256 "ca72b5b164d6cf93f6c9430f847073a9de725cb31902ac6eda68a2838d8fda47"
 
       define_method(:install) do
         bin.install "roxy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/logscore/roxy/releases/download/v1.2.0/roxy_darwin_arm64.tar.gz"
-      sha256 "8f3079849fd5a8089150a61dfe3be8bc3726c809670e4e803fd9c362027f130e"
+      url "https://github.com/logscore/roxy/releases/download/v1.2.1/roxy_darwin_arm64.tar.gz"
+      sha256 "5bc6325e86694275056bf670a239f6a66ff8ccb15e678cf9a8556dbe339075cf"
 
       define_method(:install) do
         bin.install "roxy"
@@ -28,15 +28,15 @@ class Roxy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/logscore/roxy/releases/download/v1.2.0/roxy_linux_amd64.tar.gz"
-      sha256 "51a952d6bdaf2c8e748c840fb8ba3e7eb8956e5205285016d750edd67d45348b"
+      url "https://github.com/logscore/roxy/releases/download/v1.2.1/roxy_linux_amd64.tar.gz"
+      sha256 "358364ef28d2f037ed03b55420f840f2e1ce938eef3096d0276c6e6c1d368c25"
       define_method(:install) do
         bin.install "roxy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/logscore/roxy/releases/download/v1.2.0/roxy_linux_arm64.tar.gz"
-      sha256 "b64bd8130c26c6698d9afc162c2fed02f05d780094b9a1f9cc7f0a3919c667d8"
+      url "https://github.com/logscore/roxy/releases/download/v1.2.1/roxy_linux_arm64.tar.gz"
+      sha256 "a8b7d7ea783bea135942a6100c1481639f98e2adaa1c25aa71e8fa0c9f01e34d"
       define_method(:install) do
         bin.install "roxy"
       end
